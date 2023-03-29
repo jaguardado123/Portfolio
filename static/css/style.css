@@ -44,6 +44,13 @@ Table of Content:
 @import url("https://fonts.googleapis.com/css?family=Heebo:300,400,700,900|Roboto:300,400,500,700");
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+:root {
+  /* Gradient colors */
+  --grad_left: #0078ff;
+  --grad_right: #002C5E;
+  /* Theme colors */
+  --principal: #0078ff;
+  --secondary: #000000; } /* Color variables - Joselito */
 .list {
   list-style: none;
   margin: 0px;
@@ -208,7 +215,7 @@ button:focus {
             .header_area .navbar .nav .nav-item.submenu ul .nav-item:last-child {
               border-bottom: none; }
             .header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
-              background: #766dff;
+              background: var(--principal);
               color: #fff; }
         @media (min-width: 992px) {
           .header_area .navbar .nav .nav-item.submenu:hover ul {
@@ -255,7 +262,7 @@ button:focus {
     .top_menu .header_social li:last-child {
       margin-right: 0px; }
     .top_menu .header_social li:hover a {
-      color: #766dff; }
+      color: var(--principal); }
   .top_menu .dn_btn {
     line-height: 42px;
     display: inline-block;
@@ -266,7 +273,7 @@ button:focus {
     color: #777777;
     transition: all 300ms linear 0s; }
     .top_menu .dn_btn:hover {
-      color: #766dff; }
+      color: var(--principal); }
     .top_menu .dn_btn:last-child {
       margin-right: 0px; }
   .top_menu .lan_pack {
@@ -301,14 +308,28 @@ button:focus {
 .home_banner_area {
   position: relative;
   z-index: 1;
-  background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  margin-bottom: 200px; }
+  margin-bottom: 200px;
+  /* Allows fixed background image - Joselito */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center; }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: 1; } /* Colored semi-transparent layer over fixed background - Joselito */
+  .home_overlay {
+    background-color: #222222; } /* Background color for home_banner overly - Joselito */
   .home_banner_area .box_1620 {
     min-height: 700px;
     border-radius: 12px;
     position: relative;
+    z-index: 2; /* Positions box_1620 on top of overlay - Joselito */
     bottom: -200px;
     background: #fff;
     padding: 30px;
@@ -380,9 +401,9 @@ button:focus {
   position: relative;
   z-index: 1;
   min-height: 350px;
-  background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+  background-image: -moz-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
+  background-image: -webkit-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
+  background-image: -ms-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
   margin-bottom: 120px; }
   .banner_area .box_1620 {
     background: #fff;
@@ -421,7 +442,7 @@ button:focus {
         .banner_area .banner_inner .banner_content .page_link a:last-child:before {
           display: none; }
       .banner_area .banner_inner .banner_content .page_link a:hover {
-        color: #766dff; }
+        color: var(--principal); }
 
 /* End Home Banner Area css
 ============================================================================================ */
@@ -453,7 +474,7 @@ button:focus {
   .l_blog_item p {
     margin-bottom: 0px; }
   .l_blog_item:hover h4 {
-    color: #766dff; }
+    color: var(--principal); }
 
 /* End Latest Blog Area css
 ============================================================================================ */
@@ -489,7 +510,7 @@ button:focus {
   text-align: center;
   color: #222222; }
   .tags .tag_btn:before {
-    background: #766dff; }
+    background: var(--principal); }
   .tags .tag_btn + .tag_btn {
     margin-left: 2px; }
 
@@ -534,9 +555,9 @@ button:focus {
       width: 100%;
       height: 1px; }
   .categories_post:hover .categories_details {
-    background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-    background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+    background-image: -moz-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
+    background-image: -webkit-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
+    background-image: -ms-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
     opacity: 0.851; }
 
 /*============ blog_left_sidebar css ==============*/
@@ -553,7 +574,7 @@ button:focus {
       .blog_info .post_tag a:hover {
         color: #777777; }
       .blog_info .post_tag a.active {
-        color: #766dff; }
+        color: var(--principal); }
   .blog_info .blog_meta li a {
     font: 300 14px/20px "Roboto", sans-serif;
     color: #777777;
@@ -568,7 +589,7 @@ button:focus {
       line-height: 20px;
       vertical-align: middle; }
     .blog_info .blog_meta li a:hover {
-      color: #766dff; }
+      color: var(--principal); }
 
 .blog_post img {
   max-width: 100%; }
@@ -582,7 +603,7 @@ button:focus {
     font-weight: 600;
     transition: all 0.3s linear; }
     .blog_details h2:hover {
-      color: #766dff; }
+      color: var(--principal); }
   .blog_details p {
     margin-bottom: 26px; }
 
@@ -602,7 +623,7 @@ button:focus {
   .blog_right_sidebar .widget_title {
     font-size: 18px;
     line-height: 25px;
-    background: #766dff;
+    background: var(--principal);
     text-align: center;
     color: #fff;
     padding: 8px 0px;
@@ -617,7 +638,7 @@ button:focus {
     padding-left: 20px;
     border-radius: 45px;
     z-index: 0;
-    background: #766dff; }
+    background: var(--principal); }
     .blog_right_sidebar .search_widget .input-group .form-control.placeholder {
       color: #fff; }
     .blog_right_sidebar .search_widget .input-group .form-control:-moz-placeholder {
@@ -659,7 +680,7 @@ button:focus {
         .blog_right_sidebar .author_widget .social_icon a + a {
           margin-left: 20px; }
         .blog_right_sidebar .author_widget .social_icon a:hover {
-          color: #766dff; }
+          color: var(--principal); }
   .blog_right_sidebar .popular_post_widget .post_item .media-body {
     justify-content: center;
     align-self: center;
@@ -671,7 +692,7 @@ button:focus {
       margin-bottom: 4px;
       transition: all 0.3s linear; }
       .blog_right_sidebar .popular_post_widget .post_item .media-body h3:hover {
-        color: #766dff; }
+        color: var(--principal); }
     .blog_right_sidebar .popular_post_widget .post_item .media-body p {
       font-size: 12px;
       line-height: 21px;
@@ -691,9 +712,9 @@ button:focus {
     .blog_right_sidebar .post_category_widget .cat-list li + li {
       padding-top: 15px; }
     .blog_right_sidebar .post_category_widget .cat-list li:hover {
-      border-color: #766dff; }
+      border-color: var(--principal); }
       .blog_right_sidebar .post_category_widget .cat-list li:hover a {
-        color: #766dff; }
+        color: var(--principal); }
   .blog_right_sidebar .newsletter_widget {
     text-align: center; }
     .blog_right_sidebar .newsletter_widget .form-group {
@@ -728,7 +749,7 @@ button:focus {
         outline: none;
         box-shadow: none; }
     .blog_right_sidebar .newsletter_widget .bbtns {
-      background: #766dff;
+      background: var(--principal);
       color: #fff;
       font-size: 12px;
       line-height: 38px;
@@ -750,9 +771,9 @@ button:focus {
       color: #222222;
       font-size: 12px; }
       .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-        background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-        background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-        background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+        background-image: -moz-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
+        background-image: -webkit-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
+        background-image: -ms-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
         color: #fff; }
   .blog_right_sidebar .br {
     width: 100%;
@@ -773,7 +794,7 @@ button:focus {
   font-weight: 400; }
 
 .blog-pagination .page-item.active .page-link {
-  background-color: #766dff;
+  background-color: var(--principal);
   border-color: transparent;
   color: #fff; }
 
@@ -796,7 +817,7 @@ button:focus {
 .blog-pagination .page-link:hover {
   color: #fff;
   text-decoration: none;
-  background-color: #766dff;
+  background-color: var(--principal);
   border-color: #eee; }
 
 /*============ Start Blog Single Styles  =============*/
@@ -930,7 +951,7 @@ button:focus {
     font-weight: 600;
     transition: all 300ms linear 0s; }
     .comments-area .btn-reply:hover {
-      background-color: #766dff;
+      background-color: var(--principal);
       color: #fff; }
 
 .comment-form {
@@ -1090,7 +1111,7 @@ button:focus {
     top: 0;
     font-size: 20px;
     line-height: 24px;
-    color: #766dff;
+    color: var(--principal);
     font-weight: 600; }
   .contact_info .info_item h6 {
     font-size: 16px;
@@ -1162,7 +1183,7 @@ button:focus {
     .modal-message .modal-dialog .modal-content .modal-header h2 {
       display: block;
       text-align: center;
-      color: #766dff;
+      color: var(--principal);
       padding-bottom: 10px;
       font-family: "Roboto", sans-serif; }
     .modal-message .modal-dialog .modal-content .modal-header p {
@@ -1187,20 +1208,20 @@ button:focus {
     line-height: 26px; }
     .sample-text-area p b {
       font-weight: bold;
-      color: #766dff; }
+      color: var(--principal); }
     .sample-text-area p i {
-      color: #766dff;
+      color: var(--principal);
       font-style: italic; }
     .sample-text-area p sup {
-      color: #766dff;
+      color: var(--principal);
       font-style: italic; }
     .sample-text-area p sub {
-      color: #766dff;
+      color: var(--principal);
       font-style: italic; }
     .sample-text-area p del {
-      color: #766dff; }
+      color: var(--principal); }
     .sample-text-area p u {
-      color: #766dff; }
+      color: var(--principal); }
 
 /*============== End Elements Area css ================*/
 /*==============Elements Button Area css ================*/
@@ -1296,10 +1317,10 @@ button:focus {
 
 .link-border {
   background: transparent;
-  border: 1px solid #766dff;
-  color: #766dff; }
+  border: 1px solid #0078ff;
+  color: var(--principal); }
   .link-border:before {
-    background: #766dff; }
+    background: var(--principal); }
 
 .radius {
   border-radius: 3px; }
@@ -2369,7 +2390,7 @@ h6 {
 ============================================================================================ */
 .main_btn {
   display: inline-block;
-  background-image: linear-gradient(to right, #766dff 0%, #86e8ff 48%, #766dff 100%);
+  background-image: linear-gradient(to right, #0078ff 0%, #002C5E 48%, #0078ff 100%);
   background-size: 200% auto;
   padding: 0px 40px;
   color: #fff;
@@ -2405,15 +2426,15 @@ h6 {
   cursor: pointer;
   transition: all 300ms linear 0s; }
   .main_btn2:hover {
-    background: #766dff;
+    background: var(--principal);
     color: #fff;
-    border-color: #766dff;
+    border-color: var(--principal);
     box-shadow: 0px 10px 20px 0px rgba(250, 51, 63, 0.25); }
 
 .submit_btn {
   width: auto;
   display: inline-block;
-  background: #766dff;
+  background: var(--principal);
   padding: 0px 50px;
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -2424,12 +2445,12 @@ h6 {
   outline: none !important;
   box-shadow: none !important;
   text-align: center;
-  border: 1px solid #766dff;
+  border: 1px solid #0078ff;
   cursor: pointer;
   transition: all 300ms linear 0s; }
   .submit_btn:hover {
     background: transparent;
-    color: #766dff; }
+    color: var(--principal); }
 
 .white_bg_btn {
   display: inline-block;
@@ -2447,9 +2468,9 @@ h6 {
   cursor: pointer;
   transition: all 300ms linear 0s; }
   .white_bg_btn:hover {
-    background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-    background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+    background-image: -moz-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
+    background-image: -webkit-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
+    background-image: -ms-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
     color: #fff;
     border: none; }
 
@@ -2457,7 +2478,7 @@ h6 {
   padding: 0px 44px;
   line-height: 50px;
   background: #222222;
-  color: #766dff;
+  color: var(--principal);
   display: inline-block;
   border-radius: 5px;
   font-size: 13px;
@@ -2465,7 +2486,7 @@ h6 {
   font-weight: 500;
   transition: all 300ms linear 0s; }
   .black_btn:hover {
-    background: #766dff;
+    background: var(--principal);
     color: #222222; }
 
 /* End Main Button Area css
@@ -2500,7 +2521,7 @@ h6 {
   border-radius: 5px; }
   .wel_item i {
     font-size: 24px;
-    background: linear-gradient(to right, #766dff 0%, #86e7ff 70%);
+    background: linear-gradient(to right, #0078ff 0%, #86e7ff 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .wel_item h4 {
@@ -2544,19 +2565,28 @@ h6 {
         border-radius: 5px;
         vertical-align: middle;
         align-self: center;
-        background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-        background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-        background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%); }
+        background-image: -moz-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
+        background-image: -webkit-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
+        background-image: -ms-linear-gradient(0deg, #0078ff 0%, #002C5E 100%); }
 
 /* End Welcome Area css
 ============================================================================================ */
 /* My Tabs Area css
 ============================================================================================ */
 .mytabs_area {
-  background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%); }
-
+  /* Allows fixed background image - Joselito */
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center; }
+.tabs_overlay {
+  background-image: -moz-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
+  background-image: -webkit-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
+  background-image: -ms-linear-gradient(0deg, #0078ff 0%, #002C5E 100%); } /* Background color for tabs overlay - Joselito */
+.tabs_inner {
+  position: relative;
+  z-index: 2; } /* Positions tabs_inner on top overlay = Joselito */
 .tabs_inner .nav.nav-tabs {
   display: block;
   text-align: center;
@@ -2742,7 +2772,7 @@ h6 {
       top: 50%;
       transform: translateY(-50%);
       font-size: 20px;
-      color: #766dff; }
+      color: var(--principal); }
   .personal_text .basic_info li:last-child {
     margin-bottom: 0px; }
 .personal_text .personal_social {
@@ -2762,9 +2792,9 @@ h6 {
       color: #fff;
       font-size: 16px; }
     .personal_text .personal_social li:hover a {
-      background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-      background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-      background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%); }
+      background-image: -moz-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
+      background-image: -webkit-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
+      background-image: -ms-linear-gradient(0deg, #0078ff 0%, #002C5E 100%); }
 
 /* End Personal Profile Area css
 ============================================================================================ */
@@ -2789,7 +2819,7 @@ h6 {
         transition: all 300ms linear 0s;
         text-transform: uppercase; }
       .isotope_fillter .gallery_filter li:hover a, .isotope_fillter .gallery_filter li.active a {
-        color: #766dff; }
+        color: var(--principal); }
 
 .gallery_f_inner {
   margin-bottom: -45px; }
@@ -2797,6 +2827,8 @@ h6 {
 .h_gallery_item {
   display: inline-block;
   margin-bottom: 45px; }
+  .h_gallery_item .g_img_icon {
+    width: 85px; } /* Gallery icon width - Joselito */
   .h_gallery_item .g_img_item {
     position: relative;
     text-align: center;
@@ -2808,9 +2840,10 @@ h6 {
       height: 100%;
       left: 0px;
       top: 0px;
-      background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-      background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-      background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+      background-image: -moz-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
+      background-image: -webkit-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
+      background-image: -ms-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
+      /* background-color: rgba(0, 120, 255, 1); */
       position: absolute;
       opacity: 0;
       transition: all 300ms ease; }
@@ -2836,7 +2869,7 @@ h6 {
   .h_gallery_item:hover .g_img_item .light {
     opacity: 1; }
   .h_gallery_item:hover .g_item_text h4:hover {
-    color: #766dff; }
+    color: var(--principal); }
 
 .more_btn {
   text-align: center;
@@ -2918,7 +2951,7 @@ h6 {
   color: #777777;
   margin-bottom: 30px; }
   .ab_widget p a {
-    color: #766dff; }
+    color: var(--principal); }
   .ab_widget p + p {
     margin-bottom: 0px; }
 
@@ -2965,9 +2998,9 @@ h6 {
       color: #cccccc; }
   .news_widget .input-group .sub-btn {
     border-radius: 0px;
-    background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-    background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+    background-image: -moz-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
+    background-image: -webkit-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
+    background-image: -ms-linear-gradient(0deg, #0078ff 0%, #002C5E 100%);
     outline: none !important;
     box-shadow: none !important;
     padding: 0px;
@@ -2992,13 +3025,13 @@ h6 {
   .social_widget .list li:last-child {
     margin-right: 0px; }
   .social_widget .list li:hover a {
-    color: #766dff; }
+    color: var(--principal); }
 
 .copy_right_text {
   text-align: center;
   margin-top: 60px; }
   .copy_right_text p a {
-    color: #766dff; }
+    color: var(--principal); }
 
 /* End Footer Area css
 ============================================================================================ */
