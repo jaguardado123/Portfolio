@@ -1406,6 +1406,19 @@ button:focus {
 
 .switch-wrap p {
   margin: 0; }
+.skill_item {
+  display: inline-block;
+  vertical-align: top;
+  height: 110px;
+  width: 110px;
+  margin: 25px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 7px 15px 0px rgba(153, 153, 153, 0.3); }
+  .skill_item img {
+    margin-top: 20px;
+    width: 100%;
+  }
 
 /*---------- End Elements Page -------------*/
 .sample-text-area {
@@ -2827,8 +2840,8 @@ h6 {
 .h_gallery_item {
   display: inline-block;
   margin-bottom: 45px; }
-  .h_gallery_item .g_img_icon {
-    width: 85px; } /* Gallery icon width - Joselito */
+  /* .h_gallery_item .g_img_icon {
+    width: 85px; } Gallery icon width - Joselito */
   .h_gallery_item .g_img_item {
     position: relative;
     text-align: center;
