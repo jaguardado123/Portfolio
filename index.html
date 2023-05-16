@@ -1,364 +1,509 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="static/img/favicon.png" type="image/png">
-        <title>JAG</title>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="static/css/bootstrap.css">
-        <link rel="stylesheet" href="static/vendors/linericon/style.css">
-        <link rel="stylesheet" href="static/css/font-awesome.min.css">
-        <link rel="stylesheet" href="static/vendors/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="static/vendors/lightbox/simpleLightbox.css">
-        <link rel="stylesheet" href="static/vendors/nice-select/css/nice-select.css">
-        <link rel="stylesheet" href="static/vendors/animate-css/animate.css">
-        <link rel="stylesheet" href="static/vendors/popup/magnific-popup.css">
-        <link rel="stylesheet" href="static/vendors/flaticon/flaticon.css">
-        <!-- main css -->
-        <link rel="stylesheet" href="static/css/style.css?01">
-        <link rel="stylesheet" href="static/css/responsive.css">
-    </head>
-    <body>
-        
-        <!--================Header Menu Area =================-->
-        <header class="header_area">
-            <div class="main_menu">
-            	<nav class="navbar navbar-expand-lg navbar-light">
-					<div class="container box_1620">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="index.html"><img src="static/img/logo.png" alt=""></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="#about-myself">About</a></li> 
-                                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-								<li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
-							</ul>
-						</div> 
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+		<title>Joselito A. Guardado</title>
+		<meta content="" name="description" />
+		<meta content="" name="keywords" />
+
+		<!-- Favicons -->
+		<link href="static/img/favicon.png" rel="icon" />
+		<link href="static/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+		<!-- Vendor CSS Files -->
+		<link href="static/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="static/vendors/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+		<link href="static/vendors/glightbox/css/glightbox.min.css" rel="stylesheet"/>
+		<link href="static/vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="static/css/font-awesome.min.css">
+
+		<!-- Template Main CSS File -->
+		<link href="static/css/style.css" rel="stylesheet" />
+
+		<!-- Coffee Animation CSS File -->
+		<link href="static/css/coffee.css" rel="stylesheet" />
+
+		<!-- =======================================================
+		* Template Name: DevFolio
+		* Updated: Mar 10 2023 with Bootstrap v5.2.3
+		* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+		* Author: BootstrapMade.com
+		* License: https://bootstrapmade.com/license/
+		======================================================== -->
+	</head>
+
+	<body>
+		<!-- ======= Header ======= -->
+		<header id="header" class="fixed-top">
+			<div class="container d-flex align-items-center justify-content-between">
+				<h1 class="logo"><a href="index.html">MeetMe</a></h1>
+				<!-- Uncomment below if you prefer to use an image logo -->
+				<!-- <a href="index.html" class="logo"><img src="static/img/logo.png" alt="" class="img-fluid"></a>-->
+
+				<nav id="navbar" class="navbar">
+					<ul>
+						<li>
+							<label class="switch" onclick="themeSwitch()">
+								<input id="toggle" type="checkbox">
+								<span class="slider"></span>
+							</label>
+						</li>
+						<li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+						<li><a class="nav-link scrollto" href="#aboutme">About</a></li>
+						<li><a class="nav-link scrollto" href="#skills">Skills</a></li>
+						<li><a class="nav-link scrollto" href="#projects">Projects</a></li>
+						<li><a class="nav-link scrollto" href="cv.html">CV</a></li>
+					</ul>
+					<i class="bi bi-list mobile-nav-toggle"></i>
+				</nav>
+				<!-- .navbar -->
+			</div>
+		</header>
+		<!-- End Header -->
+
+		<!-- ======= Hero Section ======= -->
+		<div id="hero" class="hero route bg-image">
+			<div class="overlay-itro"></div>
+			<div class="hero-content display-table">
+				<div class="table-cell">
+					<div class="container">
+						<!--<p class="display-6 color-d">Hello, world!</p>-->
+						<h1 class="hero-title mb-4">I am Joselito A. Guardado</h1>
+						<p class="hero-subtitle">
+							<span class="typed" data-typed-items="Full Stack Web Developer"></span>
+						</p>
+						<!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
 					</div>
-            	</nav>
-            </div>
-        </header>
-        <!--================Header Menu Area =================-->
-        
-        <!--================Home Banner Area =================-->
-        <section class="home_banner_area" style="background-image: url(static/img/counters-bg.jpg)">
-			<div class="overlay home_overlay"></div>
-           	<div class="container box_1620">
-           		<div class="banner_inner d-flex align-items-center">
-					<div class="banner_content">
-						<div class="media">
-							<div class="d-flex">
-								<img src="static/img/joselito-guardado.jpg" width="668px" alt="">
-							</div>
-							<div class="media-body">
-								<div class="personal_text">
-									<h6>Hello Everybody, i am</h6>
-									<h3>Joselito A. Guardado</h3>
-									<h4>Full Stack Web Developer</h4>
-									<p>Welcome to my portfolio page where I share my past & current projects.
-                                        You can view their source code by visiting my GitHub page.
-                                        I'm currently open to work. Check out my LinkedIn and CV for more information about me.
-                                    </p>
-									<ul class="list basic_info">
-										<li><a href="#"><i class="lnr lnr-phone-handset"></i> (956) 241 9824</a></li>
-										<li><a href="#"><i class="lnr lnr-envelope"></i> jaguardado123@gmail.com</a></li>
-										<li><a href="#"><i class="lnr lnr-home"></i> Texas</a></li>
-									</ul>
-									<ul class="list personal_social">
-										<li><a href="https://github.com/jaguardado123/"><i class="fa fa-github"></i></a></li>
-										<li><a href="https://www.linkedin.com/in/joselito-guardado/"><i class="fa fa-linkedin"></i></a></li>
-									</ul>
+				</div>
+			</div>
+		</div>
+		<!-- End Hero Section -->
+
+		<main id="main">
+			<!-- ======= About Section ======= -->
+			<span id="aboutme"></span>
+			<section id="about" class="about-mf sect-pt4 route">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="box-shadow-full">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="row">
+											<div class="col-sm-6 col-md-5">
+												<div class="about-img">
+													<img src="static/img/joselito.jpg" class="img-fluid rounded b-shadow-a" alt=""/>
+												</div>
+											</div>
+											<div class="col-sm-6 col-md-7">
+												<div class="about-info">
+													<p>
+														<span class="title-s">Name: </span>
+														<span>Joselito A. Guardado</span>
+													</p>
+													<p>
+														<span class="title-s">Profile: </span>
+														<span>Full Stack Web Developer</span>
+													</p>
+													<p>
+														<span class="title-s">Email: </span>
+														<span>jaguardado123@gmail.com</span>
+													</p>
+													<p>
+														<span class="title-s">Phone: </span>
+														<span>(956) 241-9824</span>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="skill-mf">
+											<p class="title-s">Links</p>
+											<span>Visit my LinkedIn, GitHub, or CV to find out more about me.</span>
+											<ul class="personal_social">
+												<li><a href="https://github.com/jaguardado123/"><i class="fa fa-github"></i></a></li>
+												<li><a href="https://www.linkedin.com/in/joselito-guardado/"><i class="fa fa-linkedin"></i></a></li>
+												<li><a href="cv.html"><i class="fa fa-link"></i></a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="about-me pt-4 pt-md-0">
+											<div class="title-box-2">
+												<h5 class="title-left">About me</h5>
+											</div>
+											<p class="lead">
+												I received my master's and bachelor's degrees in
+												computer science from the University of Texas Rio Grande
+												Valley (UTRGV) in Edinburg, Texas and graduated cum laude from both.
+											</p>
+											<p class="lead">
+												From 2019 to 2022 I worked as a Full Stack Web Developer
+												for UTRGV's computer sciecne and civil engineering
+												departments.
+											</p>
+											<p class="lead">
+												This page showcases my skills, achievements, and most recent projects.
+											</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-            </div>
-        </section>
-        <!--================End Home Banner Area =================-->
-        
-        <!--================Welcome Area =================-->
-        <section id="about-myself" class="welcome_area p_120">
-        	<div class="container">
-        		<div class="row welcome_inner">
-        			<div class="col-lg-6">
-        				<div class="welcome_text">
-        					<h4>About Myself</h4>
-        					<p>I received my bachelor’s and master’s degree in computer science at the University of Texas Rio Grande Valley (UTRGV). 
-								I worked for 3 years as a Full Stack Web Developer for UTRGV from 2019 to 2022.
-								My role was to develop and maintain web applications for the university's computer science and civil engineering departments' research labs. 
-								During my time at UTRGV I developed multiple web applications using different languages and frameworks.</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-6">
-        				<div class="skill_item">
-							<img src="static/img/gallery/php.png">
-						</div>
-        				<div class="skill_item">
-							<img src="static/img/gallery/mysql.png">
-						</div>
-        				<div class="skill_item">
-							<img src="static/img/gallery/node.png">
-						</div>
-        				<div class="skill_item">
-							<img src="static/img/gallery/python.png">
-						</div>
-        				<div class="skill_item">
-							<img src="static/img/gallery/html.png">
-						</div>
-        				<div class="skill_item">
-							<img src="static/img/gallery/figma.png">
-						</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Welcome Area =================-->
-        
-        <!--================My Tabs Area =================-->
-        <section class="mytabs_area p_120" style="background-image: url(static/img/overlay-bg.jpg)">
-			<div class="overlay tabs_overlay"></div>
-        	<div class="container">
-        		<div class="tabs_inner">
-					<ul class="nav nav-tabs" id="myTab" role="tablist">
-						<li class="nav-item">
-							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">My Experiences</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">My Education</a>
-						</li>
-					</ul>
-					<div class="tab-content" id="myTabContent">
-                        <!--======= Experiences Section =======-->
-						<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-							<ul class="list">
-								<li>
-									<span></span>
-									<div class="media">
-										<div class="d-flex media-date">
-											<p>2019 to 2022</p>
-										</div>
-										<div class="media-body">
-											<h4>Full Stack Web Developer</h4>
-											<p>University of Texas Rio Grande Valley<br />Edinburg, Texas</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<span></span>
-									<div class="media">
-										<div class="d-flex media-date">
-											<p>2022</p>
-										</div>
-										<div class="media-body">
-											<h4>Teaching Assistant</h4>
-											<p>University of Texas Rio Grande Valley<br />Edinburg, Texas</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-                        <!--====== Education Section =====-->
-						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-							<ul class="list">
-								<li>
-									<span></span>
-									<div class="media">
-										<div class="d-flex media-date">
-											<p>2014 to 2020</p>
-										</div>
-										<div class="media-body">
-											<h4>BS in Computer Science</h4>
-											<p>University of Texas Rio Grande Valley<br />Edinburg, Texas</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<span></span>
-									<div class="media">
-										<div class="d-flex media-date">
-											<p>2020 to 2022</p>
-										</div>
-										<div class="media-body">
-											<h4>MS in Computer Science</h4>
-											<p>University of Texas Rio Grande Valley<br />Edinburg, Texas</p>
-										</div>
-									</div>
-								</li>
-							</ul>
+			</section>
+			<!-- End About Section -->
+
+			<!-- ======= Services Section ======= -->
+			<span id="skills"></span>
+			<section id="services" class="services-mf pt-5 route">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="title-box text-center">
+								<h3 class="title-a">Skills</h3>
+								<p class="subtitle-a">
+									Brewing up my skills.
+								</p>
+								<div class="line-mf"></div>
+							</div>
 						</div>
 					</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End My Tabs Area =================-->
-        
-        <!--================Home Gallery Area =================-->
-        <section id="projects" class="home_gallery_area p_120">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>Past Projects</h2>
-        		</div>
-        		<div class="isotope_fillter">
-        			<ul class="gallery_filter list">
-						<li class="active" data-filter="*"><a href="#">All</a></li>
-						<li data-filter=".utrgv"><a href="#">UTRGV</a></li>
-						<li data-filter=".client"><a href="#">Client</a></li>
-						<li data-filter=".uiux"><a href="#">UI/UX</a></li>
-					</ul>
-        		</div>
-        	</div>
-        	<div class="container">
-        		<div class="gallery_f_inner row imageGallery1">
-        			<div class="col-lg-4 col-md-4 col-sm-6 utrgv manipul design print">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="static/img/gallery/intellibee.jpg" alt="">
-        						<a class="light" href="static/img/gallery/intellibee-lg.jpg"><img class="g_img_icon" src="static/img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<a href="https://bee.utrgv.edu/"><h4>IntelliBeeHive</h4></a>
-        						<p>UTRGV Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 utrgv manipul creative">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="static/img/gallery/milab.jpg" alt="">
-        						<a class="light" href="static/img/gallery/milab-lg.jpg"><img class="g_img_icon" src="static/img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<a href="https://miutrgv.github.io/"><h4>Machine Intelligence Lab</h4></a>
-        						<p>UTRGV Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 utrgv creative design print">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="static/img/gallery/lrgsf.jpg" alt="">
-        						<a class="light" href="static/img/gallery/lrgsf-lg.jpg"><img class="g_img_icon" src="static/img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<a href="https://lrgsf.utrgv.edu/"><h4>LRGSF Salinity Forecasting</h4></a>
-        						<p>UTRGV Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 utrgv creative print">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="static/img/gallery/webgl.jpg" alt="">
-        						<a class="light" href="static/img/gallery/webgl-lg.jpg"><img class="g_img_icon" src="static/img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<a href=""><h4>3D Protein Visualization</h4></a>
-        						<p>UTRGV Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 client manipul design">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="static/img/gallery/uguard.jpg" alt="">
-        						<a class="light" href="static/img/gallery/uguard-lg.jpg"><img class="g_img_icon" src="static/img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<a href="https://uguardheavyequipment.com/"><h4>U-Guard Heavy Equipment</h4></a>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 uiux creative">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="static/img/gallery/gym.jpg" alt="">
-        						<a class="light" href="static/img/gallery/gym-lg.jpg"><img class="g_img_icon" src="static/img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<a href="https://www.figma.com/file/HiQyMi8jmWMzmMHjnK1XNg/The-Gym?node-id=0%3A1&t=jAdG4xT9wFtPJEzg-1"><h4>Local Gym</h4></a>
-        						<p>UI/UX Design</p>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-        		<div class="more_btn">
-        			<a class="main_btn" href="#">Load More Items</a>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Home Gallery Area =================-->
-        
-        <!--================Footer Area =================-->
-        <footer class="footer_area p_120">
-        	<div class="container">
-        		<div class="row footer_inner">
-        			<div class="col-lg-5 col-sm-6">
-        				<aside class="f_widget ab_widget">
-        					<div class="f_title">
-        						<h3>About Me</h3>
-        					</div>
-        					<p>I'm currently open to work. If you are a job recruiter or a client in need of a web developer feel free to contact me.</p>
-							<p>Designed by Joselito A Guardado and Colorlib</p>
-        					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-        				</aside>
-        			</div>
-        			<div class="col-lg-5 col-sm-6">
-        				<aside class="f_widget news_widget">
+					<div class="row">
+						<div class="coffee-container">
+							<div class="upper">
+								<div class="timer"></div>
+								<div class="upper-btn"></div>
+							</div>
+							<div class="filter">
+								<div class="filter-base"></div>
+								<div class="handle"></div>
+								<div class="coffee"></div>
+								<div class="steam"></div>
+								<div class="coffee-drop"></div>
+							</div>
+							<div class="back">
+								<div class="tray"></div>
+								<div class="cup"></div>
+							</div>
+							<div class="lower">
+								<div class="lower-btn"></div>
+							</div>
+						</div>
+					</div>
+					<div class="skill-itm-list">
+						<div class="skill-itm"><img src="static/img/gallery/php.png"></div>
+						<div class="skill-itm"><img src="static/img/gallery/mysql.png"></div>
+						<div class="skill-itm"><img src="static/img/gallery/node.png"></div>
+						<div class="skill-itm"><img src="static/img/gallery/python.png"></div>
+						<div class="skill-itm"><img src="static/img/gallery/html.png"></div>
+					</div>
+				</div>
+			</section>
+			<!-- End Services Section -->
 
-        				</aside>
-        			</div>
-        			<div class="col-lg-2">
-        				<aside class="f_widget social_widget">
-        					<div class="f_title">
-        						<h3>Reach Out</h3>
-        					</div>
-        					<p>Let us be social</p>
-        					<ul class="list">
-        						<li><a href="https://www.linkedin.com/in/joselito-guardado/"><i class="fa fa-linkedin"></i></a></li>
-        						<li><a href="https://github.com/jaguardado123"><i class="fa fa-github"></i></a></li>
-								<li><a href="mailto:jaguardado123@gmail.com"><i class="fa fa-envelope"></i></a></li>
-        					</ul>
-        				</aside>
-        			</div>
-        		</div>
-        	</div>
-        </footer>
-        <!--================End Footer Area =================-->
-        
-        
-        
-        
-        
-        
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="static/js/jquery-3.3.1.min.js"></script>
-        <script src="static/js/popper.js"></script>
-        <script src="static/js/bootstrap.min.js"></script>
-        <script src="static/js/stellar.js"></script>
-        <script src="static/vendors/lightbox/simpleLightbox.min.js"></script>
-        <script src="static/vendors/nice-select/js/jquery.nice-select.min.js"></script>
-        <script src="static/vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="static/vendors/isotope/isotope.pkgd.min.js"></script>
-        <script src="static/vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="static/vendors/popup/jquery.magnific-popup.min.js"></script>
-        <script src="static/js/jquery.ajaxchimp.min.js"></script>
-        <script src="static/vendors/counter-up/jquery.waypoints.min.js"></script>
-        <script src="static/vendors/counter-up/jquery.counterup.min.js"></script>
-        <script src="static/js/mail-script.js"></script>
-        <script src="static/js/theme.js"></script>
-    </body>
+			<!-- ======= Counter Section ======== -->
+			<div class="section-counter paralax-mf bg-image" style="background-image: url(static/img/counters-bg.jpg)">
+				<div class="overlay-mf"></div>
+				<div class="container position-relative">
+					<div class="row">
+						<div class="col-sm-3 col-lg-3">
+							<div class="counter-box counter-box pt-4 pt-md-0">
+								<div class="counter-ico">
+									<span class="ico-circle"><i class="bi bi-check"></i></span>
+								</div>
+								<div class="counter-num">
+									<p data-purecounter-start="0"
+										data-purecounter-end="9"
+										data-purecounter-duration="1"
+										class="counter purecounter"
+									></p>
+									<span class="counter-text">WORKS COMPLETED</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-lg-3">
+							<div class="counter-box pt-4 pt-md-0">
+								<div class="counter-ico">
+									<span class="ico-circle"
+										><i class="bi bi-journal-richtext"></i
+									></span>
+								</div>
+								<div class="counter-num">
+									<p
+										data-purecounter-start="0"
+										data-purecounter-end="3"
+										data-purecounter-duration="1"
+										class="counter purecounter"
+									></p>
+									<span class="counter-text">YEARS OF EXPERIENCE</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-lg-3">
+							<div class="counter-box pt-4 pt-md-0">
+								<div class="counter-ico">
+									<span class="ico-circle"><i class="bi bi-people"></i></span>
+								</div>
+								<div class="counter-num">
+									<p
+										data-purecounter-start="0"
+										data-purecounter-end="3"
+										data-purecounter-duration="1"
+										class="counter purecounter"
+									></p>
+									<span class="counter-text">TOTAL CLIENTS</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-lg-3">
+							<div class="counter-box pt-4 pt-md-0">
+								<div class="counter-ico">
+									<span class="ico-circle"><i class="bi bi-award"></i></span>
+								</div>
+								<div class="counter-num">
+									<p
+										data-purecounter-start="0"
+										data-purecounter-end="1"
+										data-purecounter-duration="1"
+										class="counter purecounter"
+									></p>
+									<span class="counter-text">AWARD WON</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Counter Section -->
+
+			<!-- ======= Portfolio Section ======= -->
+			<span id="projects"></span>
+			<section id="work" class="portfolio-mf sect-pt4 route">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="title-box text-center">
+								<h3 class="title-a">Projects</h3>
+								<p class="subtitle-a">
+									My past projects in order of most recent.
+								</p>
+								<div class="line-mf"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="work-box">
+								<a href="static/img/gallery/uguard-lg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+									<div class="work-img">
+										<img src="static/img/gallery/uguard.jpg" alt="" class="img-fluid"/>
+									</div>
+								</a>
+								<div class="work-content">
+									<div class="row">
+										<div class="col-sm-8">
+											<h2 class="w-title">U-Guard Heavy Equip.</h2>
+											<div class="w-more">
+												<span class="w-ctegory">Client Project</span> /
+												<span class="w-date">January 2023</span>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="w-like">
+												<a href="https://uguardheavyequipment.com/">
+													<span class="bi bi-link"></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="work-box">
+								<a href="static/img/gallery/lrgsf-lg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+									<div class="work-img">
+										<img src="static/img/gallery/lrgsf.jpg" alt="" class="img-fluid"/>
+									</div>
+								</a>
+								<div class="work-content">
+									<div class="row">
+										<div class="col-sm-8">
+											<h2 class="w-title">LRGSF Salinity Forecast</h2>
+											<div class="w-more">
+												<span class="w-ctegory">UTRGV Project</span> /
+												<span class="w-date">Jan. 2022 - Dec. 2022</span>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="w-like">
+												<a href="https://lrgsf.utrgv.edu/">
+													<span class="bi bi-link"></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="work-box">
+								<a href="static/img/gallery/webgl-lg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+									<div class="work-img">
+										<img src="static/img/gallery/webgl.jpg" alt="" class="img-fluid"/>
+									</div>
+								</a>
+								<div class="work-content">
+									<div class="row">
+										<div class="col-sm-8">
+											<h2 class="w-title">3D Proteins WebGL</h2>
+											<div class="w-more">
+												<span class="w-ctegory">UTRGV Project</span> /
+												<span class="w-date">Jan. 2022 - May 2022</span>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="w-like">
+												<a href="https://jaguardado123.github.io/">
+													<span class="bi bi-link"></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="work-box">
+								<a href="static/img/gallery/intellibee-lg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+									<div class="work-img">
+										<img src="static/img/gallery/intellibee.jpg" alt="" class="img-fluid"/>
+									</div>
+								</a>
+								<div class="work-content">
+									<div class="row">
+										<div class="col-sm-8">
+											<h2 class="w-title">IntelliBeeHive</h2>
+											<div class="w-more">
+												<span class="w-ctegory">UTRGV Project</span> /
+												<span class="w-date">Jan. 2020 - Dec. 2022</span>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="w-like">
+												<a href="https://bee.utrgv.edu/">
+													<span class="bi bi-link"></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="work-box">
+								<a href="static/img/gallery/milab-lg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+									<div class="work-img">
+										<img src="static/img/gallery/milab.jpg" alt="" class="img-fluid"/>
+									</div>
+								</a>
+								<div class="work-content">
+									<div class="row">
+										<div class="col-sm-8">
+											<h2 class="w-title">Machine Intelligence</h2>
+											<div class="w-more">
+												<span class="w-ctegory">UTRGV Project</span> /
+												<span class="w-date">Aug. 2019 - Dec. 2022</span>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="w-like">
+												<a href="https://miutrgv.github.io/">
+													<span class="bi bi-link"></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="work-box">
+								<a href="static/img/gallery/gym-lg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+									<div class="work-img">
+										<img src="static/img/gallery/gym.jpg" alt="" class="img-fluid"/>
+									</div>
+								</a>
+								<div class="work-content">
+									<div class="row">
+										<div class="col-sm-8">
+											<h2 class="w-title">Local Gym</h2>
+											<div class="w-more">
+												<span class="w-ctegory">UI/UX Design</span> /
+												<span class="w-date">Jan. 2019</span>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="w-like">
+												<a href="portfolio-details.html">
+													<span class="bi bi-link"></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Portfolio Section -->
+		</main>
+		<!-- End #main -->
+
+		<!-- ======= Footer ======= -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="copyright-box">
+							<p class="copyright">
+								&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved
+							</p>
+							<div class="credits">
+								<!--
+								All the links in the footer should remain intact.
+								You can delete the links only if you purchased the pro version.
+								Licensing information: https://bootstrapmade.com/license/
+								Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+								-->
+								Designed by
+								<a href="https://bootstrapmade.com/">BootstrapMade</a> and Joselito A. Guardado
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End  Footer -->
+
+		<div id="preloader"></div>
+		<a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+			<i class="bi bi-arrow-up-short"></i>
+		</a>
+
+		<!-- Vendor JS Files -->
+		<script src="static/vendors/purecounter/purecounter_vanilla.js"></script>
+		<script src="static/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="static/vendors/glightbox/js/glightbox.min.js"></script>
+		<script src="static/vendors/swiper/swiper-bundle.min.js"></script>
+		<script src="static/vendors/typed.js/typed.min.js"></script>
+
+		<!-- Template Main JS File -->
+		<script src="static/js/main.js"></script>
+		<script src="static/js/theme.js"></script>
+	</body>
 </html>
