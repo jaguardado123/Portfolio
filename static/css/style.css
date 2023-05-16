@@ -471,6 +471,11 @@ a:hover {
 /*--------------------------------------------------------------
 # Toggle Switch
 --------------------------------------------------------------*/
+#toggle-switch {
+  display: inline;
+  width: 60px;
+  height: 34px;
+}
 .switch {
   width: 60px;
   height: 34px;
