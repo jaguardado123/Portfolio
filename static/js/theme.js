@@ -9,7 +9,7 @@ function themeSwitch() {
     let dark = document.getElementById("toggle").checked;
 
     // Declare color variables then initialize.
-    let background = title = text = card = theme = image = line = "";
+    let background = title = text = card = theme = image = line = coffee = "";
     if (dark) {
         /* ------------------------------------
         # Light Mode 
@@ -21,6 +21,7 @@ function themeSwitch() {
         theme = "var(--secondary)";
         image = "url(static/img/coffeecupblue-bg.jpg)";
         line = "#0f70b5";
+        coffee = "#083c61";
     }
     else {
         /*-----------------------------------
@@ -33,6 +34,7 @@ function themeSwitch() {
         theme = "var(--primary)";
         image = "url(static/img/coffeecup-bg.jpg)";
         line = "#f0551e";
+        coffee = "#b03e15";
     }
 
     /*-----------------------------------
@@ -105,5 +107,13 @@ function themeSwitch() {
     for (let i = 0; i < social_button.length; i++) {
         social_button[i].style.background = theme;
     }
+
+    /*---------------------------------
+    # Coffee Maker
+    ---------------------------------*/
+    document.getElementsByClassName("upper")[0].style.borderTop = "70px solid " + theme;
+    document.getElementsByClassName("back")[0].style.backgroundColor = coffee;
+    document.getElementsByClassName("tray")[0].style.backgroundImage = "radial-gradient(" + coffee + " 5px, transparent 6px)";
+    document.getElementsByClassName("lower")[0].style.backgroundColor = theme;
 
 }
