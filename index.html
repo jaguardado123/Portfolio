@@ -25,6 +25,47 @@
 		<!-- Coffee Animation CSS File -->
 		<link href="static/css/coffee.css" rel="stylesheet" />
 
+		<style>
+			.skill-mf li {
+				margin-left: -15px;
+				list-style-type: square;
+			}
+			.table-block {
+				box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+			}
+			.table-title {
+				font-size: 20px;
+				background-color: #202129;
+				padding: 10px;
+				text-align: center;
+				border: 1px solid #202129;
+			}
+			.t-cell {
+				border: 1px solid whitesmoke;
+				padding: 10px;
+				text-align: center;
+			}
+			.t-time {
+				text-align: end;
+			}
+			.lecture {
+				background-color:   #154360 ;
+			}
+			.off-hr {
+				background-color: #f0551e;
+			}
+			.top {
+				border-bottom: none;
+			}
+			.middle {
+				border-top: none;
+				border-bottom: none;
+			}
+			.bottom {
+				border-top: none;
+			}
+		</style>
+
 		<!-- =======================================================
 		* Template Name: DevFolio
 		* Updated: Mar 10 2023 with Bootstrap v5.2.3
@@ -39,13 +80,7 @@
 		<header id="header" class="fixed-top">
 			<div class="container d-flex align-items-center justify-content-between">
 				<h1 class="logo">
-					<a href="index.html">MeetMe</a>
-					<span id="toggle-switch">
-						<label class="switch" onclick="themeSwitch()">
-							<input id="toggle" type="checkbox">
-							<span class="slider"></span>
-						</label>
-					</span>
+					<a href="index.html">JAG</a>
 				</h1>
 				<!-- Uncomment below if you prefer to use an image logo -->
 				<!-- <a href="index.html" class="logo"><img src="static/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -54,8 +89,8 @@
 					<ul>
 						<li><a class="nav-link scrollto active" href="#hero">Home</a></li>
 						<li><a class="nav-link scrollto" href="#aboutme">About</a></li>
-						<li><a class="nav-link scrollto" href="#skills">Skills</a></li>
-						<li><a class="nav-link scrollto" href="#projects">Projects</a></li>
+						<li><a class="nav-link scrollto" href="#courses">Courses</a></li>
+						<li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
 						<li><a class="nav-link scrollto" href="cv.html">CV</a></li>
 					</ul>
 					<i class="bi bi-list mobile-nav-toggle"></i>
@@ -72,9 +107,9 @@
 				<div class="table-cell">
 					<div class="container">
 						<!--<p class="display-6 color-d">Hello, world!</p>-->
-						<h1 class="hero-title mb-4">I am Joselito A. Guardado</h1>
+						<h1 class="hero-title mb-4">Joselito A. Guardado</h1>
 						<p class="hero-subtitle">
-							<span class="typed" data-typed-items="Full Stack Web Developer, Webmaster, UI/UX Designer"></span>
+							<span class="typed" data-typed-items="Welcome to my website, Take a look around"></span>
 						</p>
 						<!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
 					</div>
@@ -102,31 +137,33 @@
 											<div class="col-sm-6 col-md-7">
 												<div class="about-info">
 													<p>
-														<span class="title-s">Name: </span>
-														<span>Joselito A. Guardado</span>
+														<span class="title-s">Dept.: </span>
+														<span>Computer Science</span>
 													</p>
 													<p>
-														<span class="title-s">Profile: </span>
-														<span>Full Stack Web Developer</span>
+														<span class="title-s">Title: </span>
+														<span>Lecturer I</span>
+													</p>
+													<p>
+														<span class="title-s">Office: </span>
+														<span>EIEAB 3.226</span>
 													</p>
 													<p>
 														<span class="title-s">Email: </span>
-														<span>jaguardado123@gmail.com</span>
+														<span><a href="mailto:joselito.guardado01@utrgv.edu">joselito.guardado01@utrgv.edu</a></span>
 													</p>
 													<p>
 														<span class="title-s">Phone: </span>
-														<span>(956) 241-9824</span>
+														<span>(956) 665-7095</span>
 													</p>
 												</div>
 											</div>
 										</div>
 										<div class="skill-mf">
-											<p class="title-s">Links</p>
-											<span>Visit my LinkedIn, GitHub, or CV to find out more about me.</span>
-											<ul class="personal_social">
-												<li><a href="https://github.com/jaguardado123/"><i class="fa fa-github"></i></a></li>
-												<li><a href="https://www.linkedin.com/in/joselito-guardado/"><i class="fa fa-linkedin"></i></a></li>
-												<li><a href="cv.html"><i class="fa fa-link"></i></a></li>
+											<span class="title-s">Education:</span>
+											<ul>
+												<li><span>MS, Computer Science, University of Texas Rio Grande Valley, 2022</span></li>
+												<li><span>BS, Computer Science, University of Texas Rio Grande Valley, 2020</span></li>
 											</ul>
 										</div>
 									</div>
@@ -136,17 +173,16 @@
 												<h5 class="title-left">About me</h5>
 											</div>
 											<p class="lead">
-												I received my master's and bachelor's degrees in
-												computer science from the University of Texas Rio Grande
-												Valley (UTRGV) in Edinburg, Texas and graduated cum laude from both.
+												I am a Lecturer for the CS Department at the University of Texas Rio Grande Valley (UTRGV).
+												On my spare time I volunteer as Webmaster and Lab Coordinator for the 
+												<a href="https://miutrgv.github.io">Machine Intelligence Lab</a>.
 											</p>
 											<p class="lead">
-												From 2019 to 2022 I worked as a Full Stack Web Developer
-												for UTRGV's computer sciecne and civil engineering
-												departments.
+												My passion is in web software development and graphic design.
 											</p>
 											<p class="lead">
-												This page showcases my skills, achievements, and most recent projects.
+												This page showcases my current and past courses and my schedule for this semester.
+												I encourage students to come to my Office Hours for any questions or concerns regarding the course material.
 											</p>
 										</div>
 									</div>
@@ -159,312 +195,220 @@
 			<!-- End About Section -->
 
 			<!-- ======= Services Section ======= -->
-			<span id="skills"></span>
+			<span id="courses"></span>
 			<section id="services" class="services-mf pt-5 route">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="title-box text-center">
-								<h3 class="title-a">Skills</h3>
-								<p class="subtitle-a">
-									Brewing up my skills.
-								</p>
+								<h3 class="title-a">Courses</h3>
 								<div class="line-mf"></div>
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="coffee-container">
-							<div class="upper">
-								<div class="timer"></div>
-								<div class="upper-btn"></div>
-							</div>
-							<div class="filter">
-								<div class="filter-base"></div>
-								<div class="handle"></div>
-								<div class="coffee"></div>
-								<div class="steam"></div>
-								<div class="coffee-drop"></div>
-							</div>
-							<div class="back">
-								<div class="tray"></div>
-								<div class="cup"></div>
-							</div>
-							<div class="lower">
-								<div class="lower-btn"></div>
-							</div>
-						</div>
-					</div>
-					<div class="skill-itm-list">
-						<div class="skill-itm"><img src="static/img/gallery/php.png"></div>
-						<div class="skill-itm"><img src="static/img/gallery/mysql.png"></div>
-						<div class="skill-itm"><img src="static/img/gallery/node.png"></div>
-						<div class="skill-itm"><img src="static/img/gallery/python.png"></div>
-						<div class="skill-itm"><img src="static/img/gallery/html.png"></div>
+						<table class="table-block">
+							<thead>
+								<tr>
+									<th class="table-title">Subject</th>
+									<th class="table-title">Course Title</th>
+									<th class="table-title">Term</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="lead t-cell">CSCI 1101</td>
+									<td class="lead t-cell tb-item">Introduction to Computer Science</td>
+									<td class="lead t-cell">Fall 2023</td>
+								</tr>
+								<tr>
+									<td class="lead t-cell">CSCI 1380</td>
+									<td class="lead t-cell">Introduction to Programming in Python</td>
+									<td class="lead t-cell">Fall 2023</td>
+								</tr>
+								<tr>
+									<td class="lead t-cell">CSCI 1470</td>
+									<td class="lead t-cell">Computer Science I</td>
+									<td class="lead t-cell">Fall 2023</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</section>
 			<!-- End Services Section -->
 
-			<!-- ======= Counter Section ======== -->
-			<div class="section-counter paralax-mf bg-image" style="background-image: url(static/img/counters-bg.jpg)">
-				<div class="overlay-mf"></div>
-				<div class="container position-relative">
-					<div class="row">
-						<div class="col-sm-3 col-lg-3">
-							<div class="counter-box counter-box pt-4 pt-md-0">
-								<div class="counter-ico">
-									<span class="ico-circle"><i class="bi bi-check"></i></span>
-								</div>
-								<div class="counter-num">
-									<p data-purecounter-start="0"
-										data-purecounter-end="9"
-										data-purecounter-duration="1"
-										class="counter purecounter"
-									></p>
-									<span class="counter-text">WORKS COMPLETED</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-3 col-lg-3">
-							<div class="counter-box pt-4 pt-md-0">
-								<div class="counter-ico">
-									<span class="ico-circle"
-										><i class="bi bi-journal-richtext"></i
-									></span>
-								</div>
-								<div class="counter-num">
-									<p
-										data-purecounter-start="0"
-										data-purecounter-end="3"
-										data-purecounter-duration="1"
-										class="counter purecounter"
-									></p>
-									<span class="counter-text">YEARS OF EXPERIENCE</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-3 col-lg-3">
-							<div class="counter-box pt-4 pt-md-0">
-								<div class="counter-ico">
-									<span class="ico-circle"><i class="bi bi-people"></i></span>
-								</div>
-								<div class="counter-num">
-									<p
-										data-purecounter-start="0"
-										data-purecounter-end="3"
-										data-purecounter-duration="1"
-										class="counter purecounter"
-									></p>
-									<span class="counter-text">TOTAL CLIENTS</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-3 col-lg-3">
-							<div class="counter-box pt-4 pt-md-0">
-								<div class="counter-ico">
-									<span class="ico-circle"><i class="bi bi-award"></i></span>
-								</div>
-								<div class="counter-num">
-									<p
-										data-purecounter-start="0"
-										data-purecounter-end="1"
-										data-purecounter-duration="1"
-										class="counter purecounter"
-									></p>
-									<span class="counter-text">AWARD WON</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- End Counter Section -->
+			<section class="about-mf sect-pt4 route"></section>
 
-			<!-- ======= Portfolio Section ======= -->
-			<span id="projects"></span>
-			<section id="work" class="portfolio-mf sect-pt4 route">
+			<!-- ======= Services Section ======= -->
+			<span id="schedule"></span>
+			<section id="services" class="services-mf pt-5 route">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="title-box text-center">
-								<h3 class="title-a">Projects</h3>
-								<p class="subtitle-a">
-									My past projects in order of most recent.
+								<h3 class="title-a">Schedule</h3>
+								<p class="subtitle-a" style="color: var(--text-dark);">
+									If my Office Hours conflict with your class/work schedule
+									let me know via email or <a href="https://discord.gg/YqmE4dHbrp">discord</a>.
 								</p>
 								<div class="line-mf"></div>
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-4">
-							<div class="work-box">
-								<a href="https://uguardheavyequipment.com/" data-gallery="portfolioGallery" class="portfolio-lightbox">
-									<div class="work-img">
-										<img src="static/img/gallery/uguard.jpg" alt="" class="img-fluid"/>
-									</div>
-								</a>
-								<div class="work-content">
-									<div class="row">
-										<div class="col-sm-8">
-											<h2 class="w-title">U-Guard Heavy Equip.</h2>
-											<div class="w-more">
-												<span class="w-ctegory">Client Project</span> /
-												<span class="w-date">January 2023</span>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<div class="w-like">
-												<a href="https://uguardheavyequipment.com/">
-													<span class="bi bi-link"></span>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="work-box">
-								<a href="https://lrgsf.utrgv.edu/" data-gallery="portfolioGallery" class="portfolio-lightbox">
-									<div class="work-img">
-										<img src="static/img/gallery/lrgsf.jpg" alt="" class="img-fluid"/>
-									</div>
-								</a>
-								<div class="work-content">
-									<div class="row">
-										<div class="col-sm-8">
-											<h2 class="w-title">LRGSF Salinity Forecast</h2>
-											<div class="w-more">
-												<span class="w-ctegory">UTRGV Project</span> /
-												<span class="w-date">Jan. 2022 - Dec. 2022</span>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<div class="w-like">
-												<a href="https://lrgsf.utrgv.edu/">
-													<span class="bi bi-link"></span>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="work-box">
-								<a href="https://miutrgv.github.io/webgl/3dmol.html" data-gallery="portfolioGallery" class="portfolio-lightbox">
-									<div class="work-img">
-										<img src="static/img/gallery/webgl.jpg" alt="" class="img-fluid"/>
-									</div>
-								</a>
-								<div class="work-content">
-									<div class="row">
-										<div class="col-sm-8">
-											<h2 class="w-title">3D Proteins WebGL</h2>
-											<div class="w-more">
-												<span class="w-ctegory">UTRGV Project</span> /
-												<span class="w-date">Jan. 2022 - May 2022</span>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<div class="w-like">
-												<a href="https://miutrgv.github.io/webgl/3dmol.html">
-													<span class="bi bi-link"></span>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="work-box">
-								<a href="https://bee.utrgv.edu/" data-gallery="portfolioGallery" class="portfolio-lightbox">
-									<div class="work-img">
-										<img src="static/img/gallery/intellibee.jpg" alt="" class="img-fluid"/>
-									</div>
-								</a>
-								<div class="work-content">
-									<div class="row">
-										<div class="col-sm-8">
-											<h2 class="w-title">IntelliBeeHive</h2>
-											<div class="w-more">
-												<span class="w-ctegory">UTRGV Project</span> /
-												<span class="w-date">Jan. 2020 - Dec. 2022</span>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<div class="w-like">
-												<a href="https://bee.utrgv.edu/">
-													<span class="bi bi-link"></span>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="work-box">
-								<a href="https://miutrgv.github.io/" data-gallery="portfolioGallery" class="portfolio-lightbox">
-									<div class="work-img">
-										<img src="static/img/gallery/milab.jpg" alt="" class="img-fluid"/>
-									</div>
-								</a>
-								<div class="work-content">
-									<div class="row">
-										<div class="col-sm-8">
-											<h2 class="w-title">Machine Intelligence</h2>
-											<div class="w-more">
-												<span class="w-ctegory">UTRGV Project</span> /
-												<span class="w-date">Aug. 2019 - Dec. 2022</span>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<div class="w-like">
-												<a href="https://miutrgv.github.io/">
-													<span class="bi bi-link"></span>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="work-box">
-								<a href="https://www.figma.com/file/HiQyMi8jmWMzmMHjnK1XNg/The-Gym?type=design&node-id=0%3A1&mode=design&t=7fnO0YW1dklltsuC-1" data-gallery="portfolioGallery" class="portfolio-lightbox">
-									<div class="work-img">
-										<img src="static/img/gallery/gym.jpg" alt="" class="img-fluid"/>
-									</div>
-								</a>
-								<div class="work-content">
-									<div class="row">
-										<div class="col-sm-8">
-											<h2 class="w-title">Local Gym</h2>
-											<div class="w-more">
-												<span class="w-ctegory">UI/UX Design</span> /
-												<span class="w-date">Jan. 2019</span>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<div class="w-like">
-												<a href="https://www.figma.com/file/HiQyMi8jmWMzmMHjnK1XNg/The-Gym?type=design&node-id=0%3A1&mode=design&t=7fnO0YW1dklltsuC-1">
-													<span class="bi bi-link"></span>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+						<table class="table-block">
+							<thead>
+								<tr>
+									<th class="table-title">Time</th>
+									<th class="table-title">Monday</th>
+									<th class="table-title">Tuesday</th>
+									<th class="table-title">Wednesday</th>
+									<th class="table-title">Thursday</th>
+									<th class="table-title">Friday</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th class="table-title t-time">8:00 AM</th>
+									<td class="lead t-cell lecture top">CSCI 1101</td>
+									<td class="lead t-cell lecture top">CSCI 1470</td>
+									<td class="lead t-cell lecture top">CSCI 1101</td>
+									<td class="lead t-cell lecture top">CSCI 1470</td>
+									<td class="lead t-cell"></td>
+								</tr>
+								<tr>
+									<th class="table-title t-time">9:15 AM</th>
+									<td class="lead t-cell lecture bottom"></td>
+									<td class="lead t-cell lecture bottom"></td>
+									<td class="lead t-cell lecture bottom"></td>
+									<td class="lead t-cell lecture bottom"></td>
+									<td class="lead t-cell"></td>
+								</tr>
+								<tr>
+									<th class="table-title t-time">9:30 AM</th>
+									<td class="lead t-cell"></td>
+									<td class="lead t-cell off-hr top">Office Hours</td>
+									<td class="lead t-cell"></td>
+									<td class="lead t-cell off-hr top">Office Hours</td>
+									<td class="lead t-cell"></td>
+								</tr>
+								<tr>
+									<th class="table-title t-time">10:45 AM</th>
+									<td class="lead t-cell"></td>
+									<td class="lead t-cell off-hr middle">9:30am - 11am</td>
+									<td class="lead t-cell"></td>
+									<td class="lead t-cell off-hr middle">9:30am - 11am</td>
+									<td class="lead t-cell lecture top">CSCI 1470</td>
+								</tr>
+								<tr>
+									<th class="table-title t-time">11:00 AM</th>
+									<td class="lead t-cell"></td>
+									<td class="lead t-cell off-hr bottom"></td>
+									<td class="lead t-cell"></td>
+									<td class="lead t-cell off-hr bottom"></td>
+									<td class="lead t-cell lecture middle">Lab</td>
+								</tr>
+								<tr>
+									<th class="table-title t-time">12:15 PM</th>
+									<td class="lead t-cell"></td>
+									<td class="lead t-cell"></td>
+									<td class="lead t-cell"></td>
+									<td class="lead t-cell"></td>
+									<td class="lead t-cell lecture middle"></td>
+								</tr>
+								<tr>
+									<th class="table-title t-time">12:30 PM</th>
+									<td class="lead t-cell lecture top">CSCI 1380</td>
+									<td class="lead t-cell"></td>
+									<td class="lead t-cell lecture top">CSCI 1380</td>
+									<td class="lead t-cell"></td>
+									<td class="lead t-cell lecture middle"></td>
+								</tr>
+								<tr>
+									<th class="table-title t-time">1:45 PM</th>
+									<td class="lead t-cell lecture bottom"></td>
+									<td class="lead t-cell"></td>
+									<td class="lead t-cell lecture bottom"></td>
+									<td class="lead t-cell"></td>
+									<td class="lead t-cell lecture bottom"></td>
+								</tr>
+								<tr>
+									<th class="table-title t-time">2:00 PM</th>
+									<td class="lead t-cell off-hr top">Office Hours</td>
+									<td class="lead t-cell"></td>
+									<td class="lead t-cell off-hr top">Office Hours</td>
+									<td class="lead t-cell"></td>
+									<td class="lead t-cell">MI Lab</td>
+								</tr>
+								<tr>
+									<th class="table-title t-time">3:15 PM</th>
+									<td class="lead t-cell off-hr bottom">2pm - 3:15pm</td>
+									<td class="lead t-cell"></td>
+									<td class="lead t-cell off-hr bottom">2pm - 3:15pm</td>
+									<td class="lead t-cell"></td>
+									<td class="lead t-cell"></td>
+								</tr>
+								<tr>
+									<th class="table-title t-time">3:30 PM</th>
+									<td class="lead t-cell lecture top">CSCI 1101</td>
+									<td class="lead t-cell"></td>
+									<td class="lead t-cell lecture top">CSCI 1101</td>
+									<td class="lead t-cell"></td>
+									<td class="lead t-cell"></td>
+								</tr>
+								<tr>
+									<th class="table-title t-time">4:45 PM</th>
+									<td class="lead t-cell lecture bottom"></td>
+									<td class="lead t-cell"></td>
+									<td class="lead t-cell lecture bottom"></td>
+									<td class="lead t-cell"></td>
+									<td class="lead t-cell"></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</section>
-			<!-- End Portfolio Section -->
+			<!-- End Services Section -->
+
+			<section class="about-mf sect-pt4 route"></section>
+
+			<!-- ======= Services Section ======= -->
+			<section id="services" class="services-mf pt-5 route">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="title-box text-center">
+								<h3 class="title-a">Courses Taught</h3>
+								<div class="line-mf"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<table class="table-block">
+							<thead>
+								<tr>
+									<th class="table-title">Subject</th>
+									<th class="table-title">Course Title</th>
+									<th class="table-title">Term</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="lead t-cell">CSCI 1101</td>
+									<td class="lead t-cell tb-item">Introduction to Computer Science</td>
+									<td class="lead t-cell">Fall 2022</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+			<!-- End Services Section -->
+
+			<section class="about-mf sect-pt4 route"></section>
 		</main>
-		<!-- End #main -->
 
 		<!-- ======= Footer ======= -->
 		<footer>

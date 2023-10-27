@@ -42,15 +42,19 @@ h6 {
 }
 
 a {
-  color: var(--text-dark);
+  color:  #3498db;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
 a:hover {
-  color: var(--primary);
-  text-decoration: none;
+  color: #3498db;
+  text-decoration: underline;
   transition: all 0.5s ease-in-out;
+}
+
+#header a {
+  text-decoration: none;
 }
 
 .p-r {
@@ -200,7 +204,7 @@ a:hover {
 
 .title-left {
   font-size: 2rem;
-  position: relative;
+  position: relative; 
   color: #fefefe;
   font-weight: 600;
 }
@@ -922,9 +926,9 @@ input:checked + .slider:before {
   }
 }
 
-.skill-mf span {
+/* .skill-mf span {
   color: #fefefe;
-}
+} */
 
 .skill-mf .progress {
   background-color: #cde1f8;
