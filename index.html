@@ -41,7 +41,8 @@
 				border: 1px solid #202129;
 			}
 			.t-cell {
-				border: 1px solid whitesmoke;
+				border: 1px solid #202129;
+				background-color: #4C4D53;
 				padding: 10px;
 				text-align: center;
 			}
@@ -68,9 +69,11 @@
 			@media only screen and (max-width: 650px) {
 				.table-title {
 					font-size: 12px;
+					padding: 10px 5px;
 				}
 				.t-cell {
 					font-size: 12px;
+					padding: 10px 5px;
 				}
 			}
 		</style>
@@ -109,25 +112,11 @@
 		</header>
 		<!-- End Header -->
 
-		<!-- ======= Hero Section ======= -->
-		<div id="hero" class="hero route bg-image">
-			<div class="overlay-itro"></div>
-			<div class="hero-content display-table">
-				<div class="table-cell">
-					<div class="container">
-						<!--<p class="display-6 color-d">Hello, world!</p>-->
-						<h1 class="hero-title mb-4">Joselito A. Guardado</h1>
-						<p class="hero-subtitle">
-							<span class="typed" data-typed-items="Welcome to my website, Take a look around"></span>
-						</p>
-						<!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End Hero Section -->
+
 
 		<main id="main">
+			<section class="about-mf sect-pt4 route"></section>
+
 			<!-- ======= About Section ======= -->
 			<span id="aboutme"></span>
 			<section id="about" class="about-mf sect-pt4 route">
@@ -145,10 +134,6 @@
 											</div>
 											<div class="col-sm-6 col-md-7">
 												<div class="about-info">
-													<p>
-														<span class="title-s">Dept.: </span>
-														<span>Computer Science</span>
-													</p>
 													<p>
 														<span class="title-s">Title: </span>
 														<span>Lecturer I</span>
@@ -182,7 +167,7 @@
 												<h5 class="title-left">About me</h5>
 											</div>
 											<p class="lead">
-												I am a Lecturer for the CS Department at the University of Texas Rio Grande Valley (UTRGV).
+												I am a Lecturer for the <a href="https://www.utrgv.edu/csci/">CS Department</a> at the University of Texas Rio Grande Valley (<a href="https://www.utrgv.edu/">UTRGV</a>).
 												On my spare time I volunteer as Webmaster and Lab Coordinator for the 
 												<a href="https://miutrgv.github.io">Machine Intelligence Lab</a>.
 											</p>
@@ -226,18 +211,27 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td class="lead t-cell">CSCI 1101</td>
+									<td class="lead t-cell">CSCI 1101-06</td>
 									<td class="lead t-cell tb-item">Introduction to Computer Science</td>
 									<td class="lead t-cell">Fall 2023</td>
 								</tr>
 								<tr>
-									<td class="lead t-cell">CSCI 1380</td>
+									<td class="lead t-cell">CSCI 1101-08</td>
+									<td class="lead t-cell tb-item">Introduction to Computer Science</td>
+									<td class="lead t-cell">Fall 2023</td>
+								</tr>
+								<tr>
+									<td class="lead t-cell">CSCI 1380-03</td>
 									<td class="lead t-cell">Introduction to Programming in Python</td>
 									<td class="lead t-cell">Fall 2023</td>
 								</tr>
 								<tr>
-									<td class="lead t-cell">CSCI 1470</td>
-									<td class="lead t-cell">Computer Science I</td>
+									<td class="lead t-cell">CSCI 1470-07</td>
+									<td class="lead t-cell">
+										Computer Science I
+										<br>
+										<strong>TA: Carlos Hernandez</strong>
+									</td>
 									<td class="lead t-cell">Fall 2023</td>
 								</tr>
 							</tbody>
@@ -269,7 +263,7 @@
 						<table class="table-block">
 							<thead>
 								<tr>
-									<th class="table-title">Time</th>
+									<th class="table-title"></th>
 									<th class="table-title">Monday</th>
 									<th class="table-title">Tuesday</th>
 									<th class="table-title">Wednesday</th>
@@ -280,10 +274,10 @@
 							<tbody>
 								<tr>
 									<th class="table-title t-time">8:00 AM</th>
-									<td class="lead t-cell lecture top">CSCI 1101</td>
-									<td class="lead t-cell lecture top">CSCI 1470</td>
-									<td class="lead t-cell lecture top">CSCI 1101</td>
-									<td class="lead t-cell lecture top">CSCI 1470</td>
+									<td class="lead t-cell lecture top">CSCI 1101-08</td>
+									<td class="lead t-cell lecture top">CSCI 1470-07</td>
+									<td class="lead t-cell lecture top">CSCI 1101-08</td>
+									<td class="lead t-cell lecture top">CSCI 1470-07</td>
 									<td class="lead t-cell"></td>
 								</tr>
 								<tr>
@@ -308,7 +302,7 @@
 									<td class="lead t-cell off-hr middle">9:30am - 11am</td>
 									<td class="lead t-cell"></td>
 									<td class="lead t-cell off-hr middle">9:30am - 11am</td>
-									<td class="lead t-cell lecture top">CSCI 1470</td>
+									<td class="lead t-cell lecture top">CSCI 1470-G</td>
 								</tr>
 								<tr>
 									<th class="table-title t-time">11:00 AM</th>
@@ -316,7 +310,7 @@
 									<td class="lead t-cell off-hr bottom"></td>
 									<td class="lead t-cell"></td>
 									<td class="lead t-cell off-hr bottom"></td>
-									<td class="lead t-cell lecture middle">Lab</td>
+									<td class="lead t-cell lecture middle"></td>
 								</tr>
 								<tr>
 									<th class="table-title t-time">12:15 PM</th>
@@ -328,9 +322,9 @@
 								</tr>
 								<tr>
 									<th class="table-title t-time">12:30 PM</th>
-									<td class="lead t-cell lecture top">CSCI 1380</td>
+									<td class="lead t-cell lecture top">CSCI 1380-03</td>
 									<td class="lead t-cell"></td>
-									<td class="lead t-cell lecture top">CSCI 1380</td>
+									<td class="lead t-cell lecture top">CSCI 1380-03</td>
 									<td class="lead t-cell"></td>
 									<td class="lead t-cell lecture middle"></td>
 								</tr>
@@ -360,9 +354,9 @@
 								</tr>
 								<tr>
 									<th class="table-title t-time">3:30 PM</th>
-									<td class="lead t-cell lecture top">CSCI 1101</td>
+									<td class="lead t-cell lecture top">CSCI 1101-06</td>
 									<td class="lead t-cell"></td>
-									<td class="lead t-cell lecture top">CSCI 1101</td>
+									<td class="lead t-cell lecture top">CSCI 1101-06</td>
 									<td class="lead t-cell"></td>
 									<td class="lead t-cell"></td>
 								</tr>
