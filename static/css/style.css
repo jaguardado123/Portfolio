@@ -15,16 +15,16 @@
   - Joselito
 */
 :root {
-  --primary: #f0551e;
+  --primary: #B55400;
   --secondary: #0f70b5;
-  --background-dark: #363d43;
+  --background-dark: #393E46;
   --background-light: #f5f5f5;
-  --text-dark: #f5f5f5;
-  --text-light: #4e4e4e;
-  --card-dark: #202129;
+  --text-dark: #EEEEEE;
+  --text-light: #EEEEEE;
+  --card-dark: #222831;
   --card-light: #fff;
-  --title-dark: #f0551e;
-  --title-light: #000;
+  --title-dark: #B55400;
+  --title-light: #fff;
 }
 
 body {
@@ -38,17 +38,17 @@ h3,
 h4,
 h5,
 h6 {
-  color: #111111;
+  color: #EEEEEE;
 }
 
 a {
-  color:  #3498db;
+  color:  #45a3e6;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
 a:hover {
-  color: #3498db;
+  color: #45a3e6;
   text-decoration: underline;
   transition: all 0.5s ease-in-out;
 }
@@ -235,6 +235,62 @@ a:hover {
 @media (min-width: 768px) {
   .box-shadow-full {
     padding: 3rem;
+  }
+}
+
+/* -----------------/ Table /---------------------- */
+.education li {
+  margin-left: -15px;
+  list-style-type: square;
+}
+.table-block {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.table-title {
+  font-size: 20px;
+  background-color: var(--primary);
+  padding: 10px;
+  text-align: center;
+  border: 1px solid var(--background-dark);
+}
+.t-cell {
+  border: 1px solid var(--background-dark);
+  background-color: #EEEEEE;
+  padding: 10px;
+  text-align: center;
+  color: var(--background-dark);
+  font-weight: 500;
+}
+.t-time {
+  text-align: end;
+  font-weight: normal;
+}
+.lecture {
+  background-color:   #B4C6E7 ;
+}
+.off-hr {
+  background-color: #FFE699;
+}
+.top {
+  border-bottom: none;
+}
+.middle {
+  border-top: none;
+  border-bottom: none;
+}
+.bottom {
+  border-top: none;
+}
+@media only screen and (max-width: 650px) {
+  .table-title {
+    font-size: 12px;
+    padding: 10px 5px;
+  }
+  .t-cell {
+    font-size: 12px;
+    padding: 10px 5px;
   }
 }
 
@@ -1571,7 +1627,7 @@ footer {
   color: #fff;
   padding: 25px 0;
   /* background: #0062d3; */
-  background: #000000;
+  background: #222831;
 }
 
 footer .copyright {
