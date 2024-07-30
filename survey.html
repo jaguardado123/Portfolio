@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+		<title>Joselito A. Guardado</title>
+		<meta content="" name="description" />
+		<meta content="" name="keywords" />
+
+		<!-- Favicons -->
+		<link href="static/img/favicon.png" rel="icon" />
+		<link href="static/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+		<!-- Vendor CSS Files -->
+		<link href="static/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="static/vendors/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+		<link href="static/vendors/glightbox/css/glightbox.min.css" rel="stylesheet"/>
+		<link href="static/vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="static/css/font-awesome.min.css">
+
+		<!-- Template Main CSS File -->
+		<link href="static/css/style.css" rel="stylesheet" />
+
+		<!-- Coffee Animation CSS File -->
+		<link href="static/css/coffee.css" rel="stylesheet" />
+
+		<!-- =======================================================
+		* Template Name: DevFolio
+		* Updated: Mar 10 2023 with Bootstrap v5.2.3
+		* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+		* Author: BootstrapMade.com
+		* License: https://bootstrapmade.com/license/
+		======================================================== -->
+		<style>
+			#success-msg {
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- ======= Header ======= -->
+		<header id="header" class="fixed-top">
+			<div class="container d-flex align-items-center justify-content-between">
+				<h1 class="logo">
+					<a href="index.html">JAG</a>
+				</h1>
+				<!-- Uncomment below if you prefer to use an image logo -->
+				<!-- <a href="index.html" class="logo"><img src="static/img/logo.png" alt="" class="img-fluid"></a>-->
+
+				<nav id="navbar" class="navbar">
+					<ul>
+						<li><a class="nav-link scrollto active" href="#aboutme">About</a></li>
+						<li><a class="nav-link scrollto" href="#courses">Courses</a></li>
+						<li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
+						<li><a class="nav-link scrollto" href="cv.html">CV</a></li>
+					</ul>
+					<i class="bi bi-list mobile-nav-toggle"></i>
+				</nav>
+				<!-- .navbar -->
+			</div>
+		</header>
+		<!-- End Header -->
+		  
+
+		<main id="main">
+			<section class="about-mf sect-pt4 route"></section>
+
+			<section class="services-mf pt-5 route">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="title-box text-center">
+								<h3 class="title-a">CSCI 3326-01 Survey</h3>
+								<p class="subtitle-a" style="color: var(--text-dark);">
+									This is an <strong>anonymous survey</strong> to collect information on your current experience of this course.
+									<br>
+									Your response will help better structure the course for the second half of the semester.
+								</p>
+								<div class="line-mf"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div id="success-msg" class="alert alert-success alert-dismissible fade show" role="alert">
+							<h4 class="alert-heading">Success!</h4>
+							<p>Your survey response has been submitted. Thank you!</p>
+							<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+						</div>					  
+						<form action="" id="surveyForm">
+							<div class="mb-3">
+								<label for="question1" class="form-label">
+									On a scale of 1 - 5, where 1 is poor and 5 is excellent.
+									<br>
+									How would you rate your current understanding of the Java programming language? (please elaborate)
+								</label>
+								<textarea class="form-control" id="question1" rows="4"></textarea>
+								<br>
+								<label for="question2" class="form-label">
+									What suggestions do you have for improving the lectures or course materials to enhance your learning experience? 
+									(e.g., pace of the lecture, examples used, additional resources, etc.)
+								</label>
+								<textarea class="form-control" id="question2" rows="4"></textarea>
+								<br>
+								<div class="d-grid gap-2 col-6 mx-auto">
+									<button type="submit" class="btn btn-dark btn-lg">Submit</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="about-mf sect-pt4 route"></section>
+
+		</main>
+
+		<!-- ======= Footer ======= -->
+		<footer style="position: absolute; bottom: 0; width: 100%;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="copyright-box">
+							<p class="copyright">
+								&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved
+							</p>
+							<div class="credits">
+								<!--
+								All the links in the footer should remain intact.
+								You can delete the links only if you purchased the pro version.
+								Licensing information: https://bootstrapmade.com/license/
+								Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+								-->
+								Designed by
+								<a href="https://bootstrapmade.com/">BootstrapMade</a> and Joselito A. Guardado
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End  Footer -->
+
+		<div id="preloader"></div>
+		<a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+			<i class="bi bi-arrow-up-short"></i>
+		</a>
+
+		<!-- Vendor JS Files -->
+		<script src="static/vendors/purecounter/purecounter_vanilla.js"></script>
+		<script src="static/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="static/vendors/glightbox/js/glightbox.min.js"></script>
+		<script src="static/vendors/swiper/swiper-bundle.min.js"></script>
+		<script src="static/vendors/typed.js/typed.min.js"></script>
+
+		<!-- Template Main JS File -->
+		<script src="static/js/main.js"></script>
+		<script src="static/js/theme.js"></script>
+
+		<script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+		<script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+		<script defer src="static/js/mail.js"></script>
+	</body>
+</html>
