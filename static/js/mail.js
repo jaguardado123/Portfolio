@@ -18,7 +18,7 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-const surveryFormDB = firebase.database().ref('surveyForm');
+const surveryFormDB = firebase.database().ref(survey);
 
 document.getElementById('surveyForm').addEventListener("submit", submitForm);
 
