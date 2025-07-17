@@ -25,6 +25,8 @@
 		<!-- Coffee Animation CSS File -->
 		<link href="static/css/coffee.css" rel="stylesheet" />
 
+		<link rel="stylesheet" href="static/css/calendar_green.css">
+
 		<!-- =======================================================
 		* Template Name: DevFolio
 		* Updated: Mar 10 2023 with Bootstrap v5.2.3
@@ -207,124 +209,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<table class="table-block">
-							<thead>
-								<tr>
-									<th class="table-title"></th>
-									<th class="table-title">Monday</th>
-									<th class="table-title">Tuesday</th>
-									<th class="table-title">Wednesday</th>
-									<th class="table-title">Thursday</th>
-									<th class="table-title">Friday</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th class="table-title t-time">8:00 AM</th>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell"></td>
-								</tr>
-								<tr>
-									<th class="table-title t-time">9:15 AM</th>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell"></td>
-								</tr>
-								<tr>
-									<th class="table-title t-time">9:30 AM</th>
-									<td class="lead t-cell lecture top"> <strong>Software Engr. II</strong></td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell lecture top"> <strong>Software Engr. II</strong></td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell"></td>
-								</tr>
-								<tr>
-									<th class="table-title t-time">10:45 AM</th>
-									<td class="lead t-cell lecture bottom"></td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell lecture bottom"></td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell lecture top"></td>
-								</tr>
-								<tr>
-									<th class="table-title t-time">11:00 AM</th>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell lecture middle"><strong>MI@UTRGV</strong></td>
-								</tr>
-								<tr>
-									<th class="table-title t-time">12:15 PM</th>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell lecture middle">10:30 AM</td>
-								</tr>
-								<tr>
-									<th class="table-title t-time">12:30 PM</th>
-									<td class="lead t-cell lecture top"><strong>Intro to Prog. in Python</strong></td>
-									<td class="lead t-cell off-hr top"><strong>Office Hours</strong></td>
-									<td class="lead t-cell lecture top"><strong>Intro to Prog. in Python</strong></td>
-									<td class="lead t-cell off-hr top"><strong>Office Hours</strong></td>
-									<td class="lead t-cell lecture middle">- 1:30 PM</td>
-								</tr>
-								<tr>
-									<th class="table-title t-time">1:45 PM</th>
-									<td class="lead t-cell lecture bottom"></td>
-									<td class="lead t-cell off-hr bottom">12:30 - 1:45 PM</td>
-									<td class="lead t-cell lecture bottom"></td>
-									<td class="lead t-cell off-hr bottom">12:30 - 1:45 PM</td>
-									<td class="lead t-cell lecture bottom"></td>
-								</tr>
-								<tr>
-									<th class="table-title t-time">2:00 PM</th>
-									<td class="lead t-cell lecture top"><strong>OOP in Java</strong></td>
-									<td class="lead t-cell lecture top"><strong>OOP in Java</strong></td>
-									<td class="lead t-cell lecture top"><strong>OOP in Java</strong></td>
-									<td class="lead t-cell lecture top"><strong>OOP in Java</strong></td>
-									<td class="lead t-cell"></td>
-								</tr>
-								<tr>
-									<th class="table-title t-time">3:15 PM</th>
-									<td class="lead t-cell lecture bottom"></td>
-									<td class="lead t-cell lecture bottom"></td>
-									<td class="lead t-cell lecture bottom"></td>
-									<td class="lead t-cell lecture bottom"></td>
-									<td class="lead t-cell"></td>
-								</tr>
-								<tr>
-									<th class="table-title t-time">3:30 PM</th>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell"></td>
-								</tr>
-								<tr>
-									<th class="table-title t-time">4:00 PM</th>
-									<td class="lead t-cell off-hr top"><strong>Office Hours</strong></td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell off-hr top"><strong>Office Hours</strong></td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell"></td>
-								</tr>
-								<tr>
-									<th class="table-title t-time">5:00 PM</th>
-									<td class="lead t-cell off-hr bottom">4:00 - 5:00 PM</td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell off-hr bottom">4:00 - 5:00 PM</td>
-									<td class="lead t-cell"></td>
-									<td class="lead t-cell"></td>
-								</tr>
-							</tbody>
-						</table>
+						<div id="dp"></div>
 					</div>
 				</div>
 			</section>
@@ -423,6 +308,68 @@
 		<a href="#" class="back-to-top d-flex align-items-center justify-content-center">
 			<i class="bi bi-arrow-up-short"></i>
 		</a>
+
+		<script src="static/js/daypilot/daypilot-all.min.js"></script>
+		<script>
+        function generateMeetings(startDate) {
+            const events = [];
+            const baseDate = new DayPilot.Date(startDate);
+            for (let i = 0; i < 5; i++) {
+                const day = baseDate.addDays(i);
+
+                // First meeting: 1:15 PM – 2:45 PM
+                const m1Start = day.addHours(13).addMinutes(15);
+                const m1End = day.addHours(14).addMinutes(45);
+                events.push({
+                    start: m1Start,
+                    end: m1End,
+                    id: `m1-${i}`,
+                    text: "Java OOP\n1:15pm - 2:45pm",
+                    barColor: "#3c78d8"
+                });
+
+                // Second meeting: 4:45 PM – 6:15 PM
+                const m2Start = day.addHours(16).addMinutes(45);
+                const m2End = day.addHours(18).addMinutes(15);
+                events.push({
+                    start: m2Start,
+                    end: m2End,
+                    id: `m2-${i}`,
+                    text: "Softw Eng 2\n4:45pm - 6:15pm",
+                    barColor: "#EE4B2B"
+                });
+
+				// New Meeting: 3:00 PM – 4:00 PM on Tuesday (i=1) and Thursday (i=3)
+				if (i === 1 || i === 3) {
+					events.push({
+						start: day.addHours(15),
+						end: day.addHours(16),
+						id: `m3-${i}`,
+						text: "Office Hours\n3pm - 4pm",
+						barColor: "#f1c232"
+					});
+				}
+            }
+            return events;
+        }
+
+        const dp = new DayPilot.Calendar("dp", {
+			viewType: "WorkWeek",
+			theme: "calendar_green",
+			startDate: "2025-07-14",
+			headerDateFormat: "dddd",
+			headerHeight: 50,
+			heightSpec: "BusinessHoursNoScroll",
+			businessBeginsHour: 9,
+			businessEndsHour: 19,
+			showNonBusiness: false,
+			
+			events: generateMeetings("2025-07-14")
+        });
+
+        dp.init();
+
+		</script>
 
 		<!-- Vendor JS Files -->
 		<script src="static/vendors/purecounter/purecounter_vanilla.js"></script>
