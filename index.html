@@ -320,13 +320,13 @@
                 // Monday & Wednesday meetings
 				if (i == 0 || i == 2) {
 					// CSCI 3341-01
-					const m1Start = day.addHours(11);
-					const m1End = day.addHours(12).addMinutes(15);
+					const m1Start = day.addHours(9).addMinutes(30);
+					const m1End = day.addHours(10).addMinutes(45);
 					events.push({
 						start: m1Start,
 						end: m1End,
 						id: `m1-${i}`,
-						text: "Softwr Engr II\n11:00am - 12:15pm",
+						text: "Softwr Engr II\n9:30am - 10:45pm",
 						barColor: "#4169E1"
 					});
 
@@ -342,50 +342,39 @@
 					});
 
 					// CSCI 3341-02
-					const m2Start = day.addHours(14);
-					const m2End = day.addHours(15).addMinutes(15);
+					const m2Start = day.addHours(15).addMinutes(30);
+					const m2End = day.addHours(16).addMinutes(45);
 					events.push({
 						start: m2Start,
 						end: m2End,
 						id: `m2-${i}`,
-						text: "Softwr Engr II\n2:00pm - 3:15pm",
+						text: "Softwr Engr II\n3:30pm - 4:45pm",
 						barColor: "#4169E1"
-					});
-
-					// CSCI 3326-01
-					const m3Start = day.addHours(15).addMinutes(30);
-					const m3End = day.addHours(16).addMinutes(45);
-					events.push({
-						start: m3Start,
-						end: m3End,
-						id: `m3-${i}`,
-						text: "OOP in Java\n3:30pm - 4:45pm",
-						barColor: "#EE4B2B"
 					});
 				}
 
                 // Tuesday & Thursday meetings
 				if (i == 1 || i == 3) {
-					// CSCI 3326-02
+					// CSCI 1470-02
 					const m4Start = day.addHours(12).addMinutes(30);
 					const m4End = day.addHours(13).addMinutes(45);
 					events.push({
 						start: m4Start,
 						end: m4End,
 						id: `m4-${i}`,
-						text: "OOP in Java\n12:30pm - 1:45pm",
+						text: "CS I\n12:30pm - 1:45pm",
 						barColor: "#EE4B2B"
 					});
 
-					// Office Hours
-					const oh2Start = day.addHours(14);
-					const oh2End = day.addHours(15).addMinutes(15);
+					// CSCI 3326-01
+					const m3Start = day.addHours(14);
+					const m3End = day.addHours(15).addMinutes(15);
 					events.push({
-						start: oh2Start,
-						end: oh2End,
-						id: `oh1-${i}`,
-						text: "Office Hours\n2:00pm - 3:15pm",
-						barColor: "#FADA5E"
+						start: m3Start,
+						end: m3End,
+						id: `m3-${i}`,
+						text: "OOP in Java\n2:00pm - 3:15pm",
+						barColor: "#EE4B2B"
 					});
 				}
             }
